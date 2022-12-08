@@ -58,13 +58,21 @@ kubectl apply -f service.yaml
 
 To Apply deployment.yaml
 
-##Ingress
+## Ingress
 
 First and Foremost , Activate Ingress Controller and If you are using Minikube then run :
 
 ```sh
 minikube addons enable ingress
 ```
+
+
+To Apply todo-ingress.yaml
+
+```sh
+kubectl apply -f todo-ingress.yaml
+```
+
 
 
 To validate if your ingress file is applied or not
