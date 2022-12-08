@@ -37,11 +37,38 @@ npm test
 To build a docker image for the todo-list-app and run it inside a container execute
 
 ```sh
-docker build -t thoba/todo-list-app .
+docker build -t dockerhub9876/todo .
 ```
 
-The above with create an image with the `latest` tag. To run the container execute
+
+## Kubernetes
+
+To Apply deployment.yaml
 
 ```sh
-docker run -it -p 8080:8080 --name todo_list_app thoba/todo-list-app
+kubectl apply -f deployment.yaml
+```
+
+
+To Apply service.yaml
+
+```sh
+kubectl apply -f service.yaml
+```
+
+To Apply deployment.yaml
+
+##Ingress
+
+First and Foremost , Activate Ingress Controller and If you are using Minikube then run :
+
+```sh
+minikube addons enable ingress
+```
+
+
+To validate if your ingress file is applied or not
+
+```sh
+kubectl get Ingress
 ```
