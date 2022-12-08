@@ -2,20 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: todo-app
-  name: todo-app
+    app: todo-example
+  name: todo-example
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: todo-app
+      app: todo-example
   template:
     metadata:
       labels:
-        app: todo-app
+        app: todo-example
     spec:
       containers:
-      - image: thoba/todo-list-app
-        name: todo-app
+      - image: dockerhub9876/todo
+        name: todo-example
         ports:
         - containerPort: 8080
