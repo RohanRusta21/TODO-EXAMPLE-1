@@ -85,4 +85,6 @@ To Access the application on browser, navigate to
 
 ```sh
 sudo nano /etc/hosts
+
+enter the host name which you have entered on the Ingress yaml file with its ip address.
 ```
