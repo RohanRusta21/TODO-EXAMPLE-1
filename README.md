@@ -80,3 +80,9 @@ To validate if your ingress file is applied or not
 ```sh
 kubectl get Ingress
 ```
+
+To Access the application on browser, navigate to 
+
+```sh
+sudo nano /etc/hosts
+```
